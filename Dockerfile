@@ -1,8 +1,4 @@
-FROM    centos:6.4
-
-# Enable EPEL for Node.js
-RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-
-6-8.noarch.rpm
+FROM    centos
 
 # install openjdk
 RUN  yum -y update
