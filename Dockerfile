@@ -6,7 +6,7 @@ RUN  yum -y update
 RUN yum -y install java-1.7.0-openjdk-devel
 
 # install tomcat6
-WORKDIR /op/
+WORKDIR /opt/
 RUN yum -y install wget
 RUN wget "http://apache.mesi.com.ar/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz" 
 RUN tar -xvzf /opt/apache-tomcat-7.0.54.tar.gz
