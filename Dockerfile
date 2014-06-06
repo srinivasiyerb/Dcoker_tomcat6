@@ -10,5 +10,4 @@ RUN yum -y install tomcat6
 
 EXPOSE 8080
 
-ENTRYPOINT [ "service", "tomcat6", "start" ]
-
+ENTRYPOINT service tomcat7 start && tail -f /var/log/tomcat7/catalina.out
