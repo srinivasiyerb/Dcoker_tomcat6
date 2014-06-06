@@ -6,8 +6,9 @@ RUN  yum -y update
 RUN yum -y install java-1.7.0-openjdk-devel
 
 # install tomcat6
-RUN wget http://apache.mesi.com.ar/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz -C /opt/
-RUN tar -xvzf apache-tomcat-7.0.54.tar.gz
+RUN wget http://apache.mesi.com.ar/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz 
+RUN mv apache-tomcat-7.0.54.tar.gz /opt/
+RUN tar -xvzf /opt/apache-tomcat-7.0.54.tar.gz
 
 EXPOSE 8080
 
