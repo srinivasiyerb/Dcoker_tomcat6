@@ -12,4 +12,3 @@ EXPOSE 8080
 
 ENTRYPOINT [ "service", "tomcat6", "start" ]
 
-CMD [ "tail", "-f", "/var/lib/tomcat7/logs/catalina.out" ]
